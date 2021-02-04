@@ -1,13 +1,13 @@
 const container = document.querySelector('.js-clock');
 
-const init = () => {
+function init() {
 	let timeDiv = document.createElement('div');
 	timeDiv.classList.add('clock');
 	timeDiv.addEventListener('dblclick', toggleFormat);
 	container.appendChild(timeDiv);
 	getTime();
 	setInterval(getTime, 1000);
-};
+}
 
 const getTime = () => {
 	const time = localStorage.getItem('format24h') == 'true' ? get24hTime() : get12hTime();

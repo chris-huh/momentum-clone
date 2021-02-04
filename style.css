@@ -1,0 +1,15 @@
+.form {
+	display: none;
+}
+
+.greeting {
+	display: none;
+}
+
+.forget-button {
+	display: none;
+}
+
+.visible {
+	display: block;
+}
